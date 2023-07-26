@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v0.1.0 (2023-07-26)
+
 Features:
 
 - Implement the `single_field_index_exemptions` to easily remove indexes from single fields in a collection.
