@@ -2,6 +2,7 @@
 resource "google_firestore_field" "index_exempted" {
   for_each = var.single_field_index_exemptions
 
+  project    = var.gcp_project_id
   collection = var.name
   field      = each.key
 
@@ -13,6 +14,7 @@ resource "google_firestore_field" "index_exempted" {
 resource "google_firestore_field" "deleted_ttl" {
   count = var.expire_soft_deleted_documents ? 1 : 0
 
+  project    = var.gcp_project_id
   collection = "${var.name}$deleted"
   field      = "_expirationDate"
 
