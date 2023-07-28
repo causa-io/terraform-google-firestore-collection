@@ -1,3 +1,9 @@
+variable "gcp_project_id" {
+  type        = string
+  description = "The GCP project ID in which the collections are configured."
+  default     = null
+}
+
 variable "name" {
   type        = string
   description = "The name of the Firestore collection."
