@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v0.2.0 (2023-07-28)
+
 Features:
 
 - Expose the `gcp_project_id` variable.
