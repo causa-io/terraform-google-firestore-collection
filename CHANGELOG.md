@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+Features:
+
+- Expose the `database` variable. It defaults to `(default)`.
+
 ## v0.2.1 (2024-02-21)
 
 Chores:
