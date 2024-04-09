@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v0.3.0 (2024-04-09)
+
 Features:
 
 - Expose the `database` variable. It defaults to `(default)`.
