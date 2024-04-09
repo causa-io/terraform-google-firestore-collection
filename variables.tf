@@ -4,6 +4,12 @@ variable "gcp_project_id" {
   default     = null
 }
 
+variable "database" {
+  type        = string
+  description = "The name of the Firestore database. Defaults to the `(default)` database."
+  default     = "(default)"
+}
+
 variable "name" {
   type        = string
   description = "The name of the Firestore collection."
