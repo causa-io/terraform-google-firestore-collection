@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+Chores:
+
+- Upgrade compatible `google` provider versions to support `6.*.*`.
+
 ## v0.3.0 (2024-04-09)
 
 Features:
