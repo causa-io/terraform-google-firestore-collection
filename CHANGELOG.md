@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+Features:
+
+- Support configuring a timeout for field create and update operations.
+
 ## v0.3.2 (2025-10-16)
 
 Chores:

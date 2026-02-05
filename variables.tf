@@ -26,3 +26,9 @@ variable "expire_soft_deleted_documents" {
   description = "Whether to set a TTL on the soft-deleted collection to automatically garbage collect documents in it. Defaults to `true`."
   default     = true
 }
+
+variable "timeout" {
+  type        = string
+  description = "The timeout for create and update operations on the Firestore fields. This can be increased for fields that take a long time to apply."
+  default     = null
+}

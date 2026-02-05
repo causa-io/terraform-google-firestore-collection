@@ -8,6 +8,15 @@ resource "google_firestore_field" "index_exempted" {
   field      = each.key
 
   index_config {}
+
+  dynamic "timeouts" {
+    for_each = var.timeout != null ? [1] : []
+
+    content {
+      create = var.timeout
+      update = var.timeout
+    }
+  }
 }
 
 # The collection suffixed with `$deleted` is used to store soft-deleted documents, which should be deleted when
@@ -22,4 +31,13 @@ resource "google_firestore_field" "deleted_ttl" {
 
   index_config {}
   ttl_config {}
+
+  dynamic "timeouts" {
+    for_each = var.timeout != null ? [1] : []
+
+    content {
+      create = var.timeout
+      update = var.timeout
+    }
+  }
 }

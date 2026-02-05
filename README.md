@@ -59,3 +59,7 @@ module "my_collection" {
   expire_soft_deleted_documents = false
 }
 ```
+
+### Field timeout
+
+Firestore field operations can sometimes take a long time to apply, which may cause Terraform to timeout. The timeout for create and update operations on field resources can be configured using the `timeout` Terraform variable. It accepts a string duration, e.g. `"60m"`.
